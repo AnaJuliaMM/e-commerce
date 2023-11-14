@@ -1,15 +1,16 @@
 import { productList } from "@/app/constants/productList";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   function convertToBRL(text: string) {}
 
   return (
     <main className="flex  flex-col  justify-between p-10 w-full gap-10">
-      <h1 className="text-center text-xl">Um café para relaxar?</h1>
+      <h1 className="text-center text-xl">Um cafézinho ou um latte para relaxar?</h1>
       <section className="flex gap-5 w-full">
         {productList.map((product) => (
-          <div
+          <Link href={`/products/${product.id}`}
             className="bg-slate-50 text-black w-full flex-col gap-2 justify-between p-5 rounded-md  transition-all hover:scale-105 hover:bg-slate-200"
             key={product.id}
           >
@@ -56,7 +57,7 @@ export default function Home() {
 
               <p className="text-xs">{product.description}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </section>
     </main>
