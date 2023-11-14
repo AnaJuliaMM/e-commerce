@@ -17,8 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className={'flex justify-center '}>
-          <img className={'h-20'} src="https://o.remove.bg/downloads/523d9324-c926-49b1-b567-5dc8ebf7d658/image-removebg-preview.png" alt="logo da empresa" />
+        <header className={'flex  items-center w-full h-25 p-3'}>
+          <img className={'h-10'} src="http://clipart-library.com/images_k/coffee-png-transparent/coffee-png-transparent-25.png" alt="logo da empresa coffe house" />
+          <h1 className='text-2xl w-full text-center text-orange-400'>Bem-vindo!</h1>
         </header>
         {children}
       </body>
