@@ -6,7 +6,7 @@ export const productList = [{
     price: 6.00,
     promotional_price: null,
     qtd: 77,
-    categoria: ['latte', 'caffe', 'chocolate'],
+    category: ['latte', 'caffe', 'chocolate'],
     avaliation: 4.5,
     comments:[{
         name: 'Ana Julia Moura Martins',
@@ -23,7 +23,7 @@ export const productList = [{
         price: 19.99,
         promotional_price: 4.00,
         qtd: 10,
-        categoria: ['latte', 'café'],
+        category: ['latte', 'café'],
         avaliation: 3.5,
         comments:[{
             name: ' Julia Silva',
@@ -40,7 +40,7 @@ export const productList = [{
         price: 7.99,
         promotional_price: 5.50,
         qtd: 14,
-        categoria: ['chocolate', 'latte'],
+        category: ['chocolate', 'latte'],
         avaliation: 3.5,
         comments:[{
             name: ' Julia Silva',
